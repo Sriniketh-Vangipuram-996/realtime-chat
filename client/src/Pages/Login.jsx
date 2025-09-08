@@ -13,7 +13,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await API.post("/auth/login", form);
+      const res = await API.post("/api/auth/login", form);
       localStorage.setItem("user", JSON.stringify(res.data.user));
       alert("Login successful!");
       navigate("/"); // go to chat page

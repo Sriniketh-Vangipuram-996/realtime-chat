@@ -1,5 +1,7 @@
 {
   "build": {
-    "rootDirectory": "server"
-  }
+    "builder": "node"
+  },
+  "start": "cd server && npm start"
 }
+

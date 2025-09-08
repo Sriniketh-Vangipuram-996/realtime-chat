@@ -15,13 +15,13 @@ const app = express();
 const server=http.createServer(app);
 const io=new Server(server,{
   cors:{
-    origin:"http://localhost:5173",
+    origin:"realtime-chat-ux9x-dbyi7a3tf-srinikeths-projects-204d2680.vercel.app",
     credentials:true,
     methods:["GET","POST"]
   }
 });
 app.use(cors({
-  origin: "http://localhost:5173", // frontend URL
+  origin: "realtime-chat-ux9x-dbyi7a3tf-srinikeths-projects-204d2680.vercel.app", // frontend URL
   credentials: true,               // allow cookies and credentials
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // allow methods your API supports
 }));

@@ -8,7 +8,7 @@ export default function Logout() {
   useEffect(() => {
     const doLogout = async () => {
       try {
-        await API.post("/api/auth/logout"); // clear cookie in backend
+        await API.post("auth/logout"); // clear cookie in backend
         localStorage.removeItem("user"); // clear user info
         navigate("/login"); // redirect to login page
       } catch (err) {
